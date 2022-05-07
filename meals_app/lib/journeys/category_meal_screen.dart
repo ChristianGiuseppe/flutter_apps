@@ -1,20 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:meals_app/data/dummy_data.dart';
+import 'package:meals_app/data/meal.dart';
+import 'package:meals_app/widget/meal_item.dart';
 
 class CategoryMealScreen extends StatelessWidget {
   static const routeName = '/category-meals';
-   CategoryMealScreen();
- /* CategoryMealScreen(
-      {Key? key, required this.categoryID, required this.titleCatgory});
-  final String categoryID;
-  final String titleCatgory;*/
+  CategoryMealScreen(
+    this.meal
+  );
+  List<Meal> meal;
 
   @override
   Widget build(BuildContext context) {
-    final routesArgs = ModalRoute.of(context)!.settings.arguments as Map<String, String>;
+    final routesArgs =
+        ModalRoute.of(context)!.settings.arguments as Map<String, String>;
     final categoryID = routesArgs['id'];
     final titleCatgory = routesArgs['title'];
-    final categoryMeal = DUMMY_MEALS;
+    final categoryMeal = meal;
 
     final filteredMeal = categoryMeal.where((element) {
       return element.categories.contains(categoryID);
@@ -31,16 +32,16 @@ class CategoryMealScreen extends StatelessWidget {
         ),
       ),
       body: Center(
-        child: ListView.builder(itemBuilder: (ctx, index) {
-          return Card(
-            child: InkWell(
-              onTap: () {},
-              child: Container(
-                padding: EdgeInsets.all(15.0),
-                child: Text(filteredMeal[index].title),
-              ),
-            ),
-          );
+        child: ListView.builder(
+          itemCount: filteredMeal.length,
+          itemBuilder: (ctx, index) {
+          return MealItem(
+              id:  filteredMeal[index].id,
+              title: filteredMeal[index].title,
+              imageUrl: filteredMeal[index].imageUrl,
+              duration: filteredMeal[index].duration,
+              complexity: filteredMeal[index].complexity,
+              affordability: filteredMeal[index].affordability);
         }),
       ),
     );

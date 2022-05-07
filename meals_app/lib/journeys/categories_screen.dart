@@ -13,12 +13,6 @@ class _CategoriesScreenState extends State<CategoriesScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(
-          'Meal Categories',
-          style: Theme.of(context).textTheme.headline1!.copyWith(color: Colors.white),
-        ),
-      ),
       body: Container(
         padding: EdgeInsets.all(25.0),
         child: GridView(

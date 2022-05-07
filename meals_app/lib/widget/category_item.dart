@@ -32,7 +32,7 @@ class CategoryItem extends StatelessWidget {
               colors: [bgColor.withOpacity(0.7), bgColor]),
           borderRadius: BorderRadius.circular(15.0),
         ),
-        child: Text(title),
+        child: Text(title, style: TextStyle(color: Colors.white, fontWeight: FontWeight.bold),),
       ),
     );
   }
