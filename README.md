@@ -19,6 +19,10 @@ In this repository there are different kind of projects such as mobile apps and 
           </td>
       </tr>
       <tr>
+        <td style="text-align: center">
+                <a href="https://github.com/ChristianGiuseppe/flutter_apps/tree/main/meals_app">Meals app</a>
+                <img width="180" alt="Meals app" src="https://github.com/ChristianGiuseppe/flutter_apps/blob/main/meals_app/meals_app.gif" />
+            </td>
       </td>
 </table>
 </div>
