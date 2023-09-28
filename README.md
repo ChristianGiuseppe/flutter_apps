@@ -9,7 +9,8 @@ In this repository there are different kind of projects such as mobile apps and 
 	</td>
    	
    <td style="text-align: center">
-  <img width="180" alt="BMW" src="https://github.com/ChristianGiuseppe/flutter_apps/tree/main/expense_planner"/>
+    [Expense Planner](https://github.com/ChristianGiuseppe/flutter_apps/tree/main/expense_planner)
+  <img width="180" alt="Expense Planner" src="https://github.com/ChristianGiuseppe/flutter_apps/blob/main/expense_planner/expense_planner.png" />
   
    Expense Planner 
 
