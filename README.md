@@ -5,7 +5,7 @@ In this repository there are different kind of projects such as mobile apps and 
 <div style="text-align: center"><table><tr>
 	<td style="text-align: center">
     	[BrickBreaker](https://github.com/ChristianGiuseppe/flutter_apps/tree/main/brick_break)
-    	<img width="180" alt="Stream" src="https://github.com/ChristianGiuseppe/flutter_apps/blob/main/brick_break/BrickBreak_end.png" /> 
+    	<img width="180" alt="BrickBreaker" src="https://github.com/ChristianGiuseppe/flutter_apps/blob/main/brick_break/BrickBreak_end.png" /> 
 	</td>
    	
    <td style="text-align: center">
