@@ -58,7 +58,7 @@ class _SettingsState extends State<Settings> {
           'Filters',
           style: Theme.of(context)
               .textTheme
-              .headline1!
+              .displayLarge!
               .copyWith(color: Colors.white),
         ),
       ),
@@ -67,7 +67,7 @@ class _SettingsState extends State<Settings> {
           Container(
             padding: EdgeInsets.all(20.0),
             child: Text('Adjust your meal selection.',
-                style: Theme.of(context).textTheme.headline1),
+                style: Theme.of(context).textTheme.displayLarge),
           ),
           Expanded(
             child: ListView(

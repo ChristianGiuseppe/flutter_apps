@@ -41,7 +41,6 @@ class _MyAppState extends State<MyApp> {
     int item = _favorite.indexWhere((element) => element.id == id);
     if (item >= 0) {
       return true;
-      setState(() {});
     }
     return false;
   }
@@ -73,17 +72,17 @@ class _MyAppState extends State<MyApp> {
       title: 'DeliMeals',
       theme: ThemeData(
         primarySwatch: Colors.teal,
-        accentColor: Colors.amber,
+        hintColor: Colors.amber,
         canvasColor: Color.fromRGBO(255, 254, 229, 1),
         fontFamily: 'Raleway',
         textTheme: ThemeData.light().textTheme.copyWith(
-              bodyText1: TextStyle(
+              bodyLarge: TextStyle(
                 color: Color.fromRGBO(20, 51, 51, 1),
               ),
-              bodyText2: TextStyle(
+              bodyMedium: TextStyle(
                 color: Color.fromRGBO(20, 51, 51, 1),
               ),
-              headline1: TextStyle(
+              displayLarge: TextStyle(
                 fontSize: 24,
                 fontFamily: 'RobotoCondensed',
                 fontWeight: FontWeight.bold,
@@ -93,7 +92,7 @@ class _MyAppState extends State<MyApp> {
       initialRoute: '/',
       routes: {
         TabScreen.routeNamed: (ctx) => TabScreen(favorite: _favorite),
-        CategoryMealScreen.routeName: (ctx) => CategoryMealScreen(_meals),
+        CategoryMealScreen.routeName: (ctx) => CategoryMealScreen(meal: _meals),
         MealDetailScreen.routeName: (ctx) => MealDetailScreen(
               setToogleFavorite: setToogleFavorite,
               isFavorite: isFavorite,
