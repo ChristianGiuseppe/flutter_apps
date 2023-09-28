@@ -1,5 +1,5 @@
 # flutter_apps
-This repository contains all of my Flutter tutorials
+In this repository there are different kind of projects such as mobile apps and video games created with the flutter framework
 
 
 <div style="text-align: center"><table><tr>
