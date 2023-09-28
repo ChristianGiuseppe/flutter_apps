@@ -1,7 +1,6 @@
 import 'package:expense_planner/widgets/chart_transaction.dart';
 import 'package:expense_planner/widgets/new_transaction.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/rendering.dart';
 import 'package:flutter/services.dart';
 
 import 'models/transaction.dart';
@@ -26,24 +25,22 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.amber,
         fontFamily: 'Quicksand',
         textTheme: ThemeData.light().textTheme.copyWith(
-            headline6: TextStyle(
+            titleLarge: TextStyle(
                 fontFamily: 'OpenSans',
                 fontSize: 18,
                 fontWeight: FontWeight.bold)),
         appBarTheme: AppBarTheme(
-          textTheme: ThemeData.light().textTheme.copyWith(
-              headline6: TextStyle(
-                  fontFamily: 'OpenSans',
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold)),
-        ),
+            titleTextStyle: TextStyle(
+                fontFamily: 'OpenSans',
+                fontSize: 20,
+                fontWeight: FontWeight.bold)),
       ),
       home: HomePage(),
     );
   }
 }
 
-class HomePage extends StatefulWidget  {
+class HomePage extends StatefulWidget {
   @override
   _HomePageState createState() => _HomePageState();
 }
@@ -110,10 +107,9 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
     });
   }
 
-  initState(){
-    WidgetsBinding.instance!.addObserver(this);
+  initState() {
+    WidgetsBinding.instance.addObserver(this);
     super.initState();
-   
   }
 
   didChangeAppLifecycleState(AppLifecycleState state) {
@@ -121,8 +117,8 @@ class _HomePageState extends State<HomePage> with WidgetsBindingObserver {
   }
 
   @override
-   dispose() {
-    WidgetsBinding.instance!.removeObserver(this);
+  dispose() {
+    WidgetsBinding.instance.removeObserver(this);
     super.dispose();
   }
 }
