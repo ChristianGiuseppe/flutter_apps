@@ -9,10 +9,9 @@ In this repository there are different kind of projects such as mobile apps and 
 	</td>
    	
    <td style="text-align: center">
-   <!--  <img width="180" alt="BMW" src="https://user-images.githubusercontent.com/1295961/160239273-ce881c0c-c3de-4953-9448-dfd12d7ffe30.png">
+  <img width="180" alt="BMW" src="https://github.com/ChristianGiuseppe/flutter_apps/tree/main/expense_planner"/>
   
-    BMW
-    Connect -->
+   Expense Planner 
 
   </td>
 
