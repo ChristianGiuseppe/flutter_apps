@@ -1,23 +1,28 @@
+// ignore_for_file: duplicate_ignore
+
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:todoey_flutter/model/task.dart';
 import 'package:todoey_flutter/model/task_data.dart';
 
+@immutable
 class AddTaskScreen extends StatelessWidget {
-  String newTaskTitle;
+  AddTaskScreen({Key? key}) : super(key: key);
+  String? newTaskTitle;
+
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Color(0xff757575),
+      color: const Color(0xff757575),
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
-        decoration: BoxDecoration(
+        padding: const EdgeInsets.symmetric(horizontal: 20.0, vertical: 20.0),
+        decoration: const BoxDecoration(
           color: Colors.white,
           borderRadius: BorderRadius.only(
               topRight: Radius.circular(20.0), topLeft: Radius.circular(20.0)),
         ),
         child: Column(crossAxisAlignment: CrossAxisAlignment.center, children: [
-          Text(
+          const Text(
             'ADD TASK',
             style: TextStyle(
                 color: Colors.lightGreenAccent,
@@ -27,22 +32,28 @@ class AddTaskScreen extends StatelessWidget {
           TextField(
             autofocus: true,
             textAlign: TextAlign.center,
-            onChanged: (newText){
+            onChanged: (newText) {
               newTaskTitle = newText;
             },
           ),
-          Container(
+          SizedBox(
               width: double.infinity,
-              child: FlatButton(
-                  padding:
-                      EdgeInsets.symmetric(vertical: 12.0, horizontal: 12.0),
+              child: TextButton(
+                  style: TextButton.styleFrom(
+                    padding: const EdgeInsets.symmetric(
+                        vertical: 12.0, horizontal: 12.0),
+                    backgroundColor: Colors.lightGreenAccent,
+                  ),
                   onPressed: () {
-                    Task newTask  = new Task(name: newTaskTitle);
-                    Provider.of<TaskData>(context).addTask(newTask);
+                    if (newTaskTitle == null || newTaskTitle!.isEmpty) {
+                      return;
+                    }
+                    Task newTask = Task(name: newTaskTitle!);
+                    Provider.of<TaskData>(context, listen: false)
+                        .addTask(newTask);
                     Navigator.pop(context);
                   },
-                  color: Colors.lightGreenAccent,
-                  child: Text(
+                  child: const Text(
                     'Add',
                     style: TextStyle(color: Colors.white, fontSize: 20.0),
                   )))

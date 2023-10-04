@@ -4,18 +4,19 @@ import 'package:todoey_flutter/screens/tasks_screen.dart';
 import 'package:provider/provider.dart';
 
 void main() {
-  runApp(TodoEy());
+  runApp(const TodoEy());
 }
 
 class TodoEy extends StatelessWidget {
+  const TodoEy({super.key});
+
   @override
   Widget build(BuildContext context) {
     return ChangeNotifierProvider(
-      builder: (context) => TaskData(),
-      child: MaterialApp(
+      create: (context) => TaskData(),
+      child: const MaterialApp(
         home: TasksScreen(),
       ),
     );
   }
 }
-

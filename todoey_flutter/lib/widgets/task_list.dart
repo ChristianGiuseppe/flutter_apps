@@ -4,6 +4,8 @@ import 'package:todoey_flutter/model/task_data.dart';
 import 'package:todoey_flutter/widgets/task_title.dart';
 
 class TasksList extends StatelessWidget {
+  const TasksList({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Consumer<TaskData>(builder: (context, taskData, child) {

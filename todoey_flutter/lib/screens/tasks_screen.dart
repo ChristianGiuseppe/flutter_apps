@@ -6,6 +6,8 @@ import 'package:todoey_flutter/widgets/task_list.dart';
 import 'add_task.dart';
 
 class TasksScreen extends StatelessWidget {
+  const TasksScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,9 +18,9 @@ class TasksScreen extends StatelessWidget {
           showModalBottomSheet(
               context: context, builder: (context) => AddTaskScreen());
         },
-        child: Center(
+        child: const Center(
           child: Padding(
-            padding: const EdgeInsets.all(8.0),
+            padding: EdgeInsets.all(8.0),
             child: Center(
               child: Icon(
                 Icons.add,
@@ -32,18 +34,18 @@ class TasksScreen extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Container(
-            padding: EdgeInsets.only(
+            padding: const EdgeInsets.only(
                 top: 60.0, left: 30.0, right: 30.0, bottom: 30.0),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
-                CircleAvatar(
-                  child: Icon(Icons.list, color: Colors.lightGreen, size: 40.0),
+                const CircleAvatar(
                   backgroundColor: Colors.white,
                   radius: 30.0,
+                  child: Icon(Icons.list, color: Colors.lightGreen, size: 40.0),
                 ),
-                SizedBox(height: 20.0), //todo da mettere in un cerchio
-                Text(
+                const SizedBox(height: 20.0), //todo da mettere in un cerchio
+                const Text(
                   'Todoey',
                   style: TextStyle(
                       color: Colors.white,
@@ -52,22 +54,22 @@ class TasksScreen extends StatelessWidget {
                 ),
                 Text(
                   '${Provider.of<TaskData>(context).taskCount} Tasks',
-                  style: TextStyle(color: Colors.white, fontSize: 16.0),
+                  style: const TextStyle(color: Colors.white, fontSize: 16.0),
                 ),
               ],
             ),
           ),
           Expanded(
             child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 20.0),
+              padding: const EdgeInsets.symmetric(horizontal: 20.0),
               height: 300.0,
-              decoration: BoxDecoration(
+              decoration: const BoxDecoration(
                 color: Colors.white,
                 borderRadius: BorderRadius.only(
                     topLeft: Radius.circular(20.0),
                     topRight: Radius.circular(20.0)),
               ),
-              child: TasksList(),
+              child: const TasksList(),
             ),
           )
         ],
