@@ -4,7 +4,7 @@ import 'package:flutter/foundation.dart';
 import 'package:http/http.dart' as http;
 
 class Product with ChangeNotifier {
-  final String id;
+  String? id;
   final String title;
   final String description;
   final double price;
@@ -12,11 +12,11 @@ class Product with ChangeNotifier {
   bool isFavorite;
 
   Product({
-    @required this.id,
-    @required this.title,
-    @required this.description,
-    @required this.price,
-    @required this.imageUrl,
+    required this.id,
+    required this.title,
+    required this.description,
+    required this.price,
+    required this.imageUrl,
     this.isFavorite = false,
   });
 
@@ -31,9 +31,10 @@ class Product with ChangeNotifier {
     notifyListeners();
     final url =
         'https://flutter-update.firebaseio.com/userFavorites/$userId/$id.json?auth=$token';
+    Uri uri = Uri.parse(url);
     try {
       final response = await http.put(
-        url,
+        uri,
         body: json.encode(
           isFavorite,
         ),

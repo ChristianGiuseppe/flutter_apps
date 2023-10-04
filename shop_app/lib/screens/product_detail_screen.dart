@@ -13,7 +13,7 @@ class ProductDetailScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final productId =
-        ModalRoute.of(context).settings.arguments as String; // is the id!
+        ModalRoute.of(context)?.settings.arguments as String; // is the id!
     final loadedProduct = Provider.of<Products>(
       context,
       listen: false,
@@ -30,7 +30,7 @@ class ProductDetailScreen extends StatelessWidget {
             flexibleSpace: FlexibleSpaceBar(
               title: Text(loadedProduct.title),
               background: Hero(
-                tag: loadedProduct.id,
+                tag: loadedProduct.id!,
                 child: Image.network(
                   loadedProduct.imageUrl,
                   fit: BoxFit.cover,
@@ -41,20 +41,20 @@ class ProductDetailScreen extends StatelessWidget {
           SliverList(
             delegate: SliverChildListDelegate(
               [
-                SizedBox(height: 10),
+                const SizedBox(height: 10),
                 Text(
                   '\$${loadedProduct.price}',
-                  style: TextStyle(
+                  style: const TextStyle(
                     color: Colors.grey,
                     fontSize: 20,
                   ),
                   textAlign: TextAlign.center,
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Container(
-                  padding: EdgeInsets.symmetric(horizontal: 10),
+                  padding: const EdgeInsets.symmetric(horizontal: 10),
                   width: double.infinity,
                   child: Text(
                     loadedProduct.description,
@@ -62,7 +62,9 @@ class ProductDetailScreen extends StatelessWidget {
                     softWrap: true,
                   ),
                 ),
-                SizedBox(height: 800,),
+                const SizedBox(
+                  height: 800,
+                ),
               ],
             ),
           ),

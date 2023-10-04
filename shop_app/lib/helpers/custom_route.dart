@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 
 class CustomRoute<T> extends MaterialPageRoute<T> {
   CustomRoute({
-    WidgetBuilder builder,
-    RouteSettings settings,
+    required WidgetBuilder builder,
+    RouteSettings? settings,
   }) : super(
           builder: builder,
           settings: settings,
@@ -16,7 +16,7 @@ class CustomRoute<T> extends MaterialPageRoute<T> {
     Animation<double> secondaryAnimation,
     Widget child,
   ) {
-    if (settings.isInitialRoute) {
+    if (settings.name == '/') {
       return child;
     }
     return FadeTransition(
@@ -27,7 +27,7 @@ class CustomRoute<T> extends MaterialPageRoute<T> {
 }
 
 class CustomPageTransitionBuilder extends PageTransitionsBuilder {
- @override
+  @override
   Widget buildTransitions<T>(
     PageRoute<T> route,
     BuildContext context,
@@ -35,7 +35,7 @@ class CustomPageTransitionBuilder extends PageTransitionsBuilder {
     Animation<double> secondaryAnimation,
     Widget child,
   ) {
-    if (route.settings.isInitialRoute) {
+    if (route.settings.name == '/') {
       return child;
     }
     return FadeTransition(

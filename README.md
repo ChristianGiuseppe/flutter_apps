@@ -24,5 +24,15 @@ In this repository there are different kind of projects such as mobile apps and 
                 <img width="180" alt="Meals app" src="https://github.com/ChristianGiuseppe/flutter_apps/blob/main/meals_app/meals_app.gif" />
             </td>
       </td>
+       <td style="text-align: center">
+                <a href="">Shop app</a>
+                <img width="180" alt="Shop app" src="" />
+            </td>
+      </td>
+        <td style="text-align: center">
+                <a href="">Todoey app</a>
+                <img width="180" alt="Todoey app" src="" />
+            </td>
+      </td>
 </table>
 </div>
