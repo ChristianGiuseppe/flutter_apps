@@ -30,9 +30,9 @@ In this repository there are different kind of projects such as mobile apps and 
             </td>
       </td>
         <td style="text-align: center">
-                <a href="">Todoey app</a>
-                <img width="180" alt="Todoey app" src="" />
-            </td>
+                <a href="https://github.com/ChristianGiuseppe/flutter_apps/tree/main/todoey_flutter">Todoey app</a>
+                <img width="180" alt="Todoey app" src="https://github.com/ChristianGiuseppe/flutter_apps/blob/main/todoey_flutter/todoey.gif" />
+        </td>
       </td>
 </table>
 </div>
