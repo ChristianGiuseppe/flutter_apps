@@ -1,0 +1,5 @@
+{
+  "ENVIRONMENT_PROD": true,
+  "BASE_URL": "https://v6.exchangerate-api.com/v6/",
+  "KEY_URL": ""
+}

@@ -1,0 +1,53 @@
+name: coinvert
+description: Coinvert è l'app definitiva per chi viaggia o gestisce transazioni in valute diverse. Con Coinvert, ottenere il tasso di cambio più aggiornato è semplice e veloce. L'app supporta oltre 150 valute mondiali e criptovalute, garantendo copertura e affidabilità ovunque ti trovi."
+publish_to: "none"
+
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.3.0 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.6
+
+  flutter_svg: ^2.0.10+1
+
+  intl: ^0.19.0
+  dartz: ^0.10.1
+
+  provider: ^6.1.2
+  equatable: ^2.0.5
+
+  get_it: ^7.2.0
+  dio: ^5.4.3+1
+  shared_preferences: ^2.2.3
+
+  mockito: ^5.4.3
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  build_runner: ^2.4.7
+  flutter_lints: ^3.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/fonts/
+    - assets/icons/
+    - assets/images/
+
+  fonts:
+    - family: OVSoge
+      fonts:
+        - asset: assets/fonts/OVSoge-Bold.otf
+          weight: 800
+        - asset: assets/fonts/OVSoge-SemiBold.otf
+          weight: 600
+        - asset: assets/fonts/OVSoge-Medium.otf
+          weight: 500
+        - asset: assets/fonts/OVSoge-Regular.otf
+          weight: 400
