@@ -1,0 +1,250 @@
+{
+  "recipes": [
+    {
+      "name": "Spaghetti alla Carbonara",
+      "category": "Primo Piatto",
+      "imgURL": "http://localhost:8080/images/spaghetti-alla-carbonara.jpg",
+      "region": "Lazio",
+      "city": "Roma",
+      "ingredients": [
+        { "name": "Spaghetti", "quantity": 400, "unit": "g" },
+        { "name": "Guanciale", "quantity": 150, "unit": "g" },
+        { "name": "Uova", "quantity": 4, "unit": "pcs" },
+        { "name": "Pecorino Romano", "quantity": 100, "unit": "g" },
+        { "name": "Pepe Nero", "quantity": 1, "unit": "tsp" }
+      ],
+      "steps": [
+        "Tagliare il guanciale a listarelle e rosolarlo fino a renderlo croccante.",
+        "Cuocere gli spaghetti in abbondante acqua salata fino a che siano al dente.",
+        "Sbattere le uova e mescolarle con il pecorino e il pepe.",
+        "Scolare la pasta e unirla al guanciale.",
+        "Togliere dal fuoco e incorporare rapidamente il composto di uova per creare una salsa cremosa.",
+        "Servire immediatamente con una spolverata extra di pecorino e pepe."
+      ]
+    },
+    {
+      "name": "Bruschetta al Pomodoro",
+      "category": "Antipasto",
+      "imgURL": "http://localhost:8080/images/bruschetta-al-pomodoro.jpg",
+      "region": "Toscana",
+      "city": "Firenze",
+      "ingredients": [
+        { "name": "Pane casereccio", "quantity": 4, "unit": "fette" },
+        { "name": "Pomodori maturi", "quantity": 3, "unit": "medi" },
+        { "name": "Aglio", "quantity": 1, "unit": "spicchio" },
+        { "name": "Basilico fresco", "quantity": 5, "unit": "foglie" },
+        {
+          "name": "Olio extravergine di oliva",
+          "quantity": null,
+          "unit": "q.b."
+        },
+        { "name": "Sale", "quantity": null, "unit": "q.b." }
+      ],
+      "steps": [
+        "Tostare leggermente il pane.",
+        "Strofinare le fette con lo spicchio d'aglio.",
+        "Tagliare i pomodori a cubetti e condirli con olio, sale e basilico.",
+        "Distribuire il composto sui crostini di pane.",
+        "Servire immediatamente."
+      ]
+    },
+    {
+      "name": "Tiramisù",
+      "category": "Dessert",
+      "imgURL": "http://localhost:8080/images/tiramisu-classico.jpg",
+      "region": "Veneto",
+      "city": "Treviso",
+      "ingredients": [
+        { "name": "Savoiardi", "quantity": 300, "unit": "g" },
+        { "name": "Mascarpone", "quantity": 500, "unit": "g" },
+        {
+          "name": "Uova",
+          "quantity": 4,
+          "unit": "pcs (separati tuorli e albumi)"
+        },
+        { "name": "Zucchero", "quantity": 120, "unit": "g" },
+        { "name": "Caffè espresso", "quantity": 300, "unit": "ml" },
+        { "name": "Cacao amaro in polvere", "quantity": null, "unit": "q.b." }
+      ],
+      "steps": [
+        "Montare i tuorli con lo zucchero fino a ottenere una crema.",
+        "Aggiungere il mascarpone alla crema di tuorli.",
+        "Montare gli albumi a neve e incorporarli delicatamente al composto.",
+        "Inzuppare i savoiardi nel caffè e disporli in una pirofila.",
+        "Coprirli con uno strato di crema e ripetere gli strati.",
+        "Spolverare con cacao e lasciare raffreddare in frigo per almeno 4 ore."
+      ]
+    },
+    {
+      "name": "Lasagna alla Bolognese",
+      "category": "Primo Piatto",
+      "imgURL": "http://localhost:8080/images/lasagne-alla-bolognese.jpg",
+      "region": "Emilia-Romagna",
+      "city": "Bologna",
+      "ingredients": [
+        { "name": "Sfoglie di lasagna", "quantity": 250, "unit": "g" },
+        { "name": "Ragù alla bolognese", "quantity": 500, "unit": "g" },
+        { "name": "Besciamella", "quantity": 500, "unit": "ml" },
+        {
+          "name": "Parmigiano Reggiano grattugiato",
+          "quantity": 100,
+          "unit": "g"
+        },
+        { "name": "Burro", "quantity": null, "unit": "q.b." }
+      ],
+      "steps": [
+        "Preparare il ragù secondo la ricetta tradizionale.",
+        "Preparare la besciamella.",
+        "Alternare strati di sfoglie, ragù, besciamella e parmigiano in una teglia.",
+        "Cuocere in forno a 180°C per circa 40 minuti.",
+        "Lasciare riposare prima di servire."
+      ]
+    },
+    {
+      "name": "Pesto alla Genovese",
+      "category": "Primo Piatto",
+      "imgURL": "http://localhost:8080/images/pesto-alla-genovese.jpg",
+      "region": "Liguria",
+      "city": "Genova",
+      "ingredients": [
+        { "name": "Basilico fresco", "quantity": 50, "unit": "g" },
+        { "name": "Aglio", "quantity": 1, "unit": "spicchio" },
+        { "name": "Pinoli", "quantity": 30, "unit": "g" },
+        { "name": "Parmigiano Reggiano", "quantity": 50, "unit": "g" },
+        { "name": "Pecorino", "quantity": 20, "unit": "g" },
+        { "name": "Olio extravergine di oliva", "quantity": 100, "unit": "ml" },
+        { "name": "Sale", "quantity": null, "unit": "q.b." }
+      ],
+      "steps": [
+        "Lavare il basilico e asciugarlo delicatamente.",
+        "Frullare il basilico con l'aglio, i pinoli e i formaggi.",
+        "Aggiungere l'olio a filo fino a ottenere una consistenza cremosa.",
+        "Condire la pasta con il pesto e servire."
+      ]
+    },
+    {
+      "name": "Insalata Caprese",
+      "category": "Antipasto",
+      "imgURL": "http://localhost:8080/images/insalata-caprese.jpg",
+      "region": "Campania",
+      "city": "Napoli",
+      "ingredients": [
+        { "name": "Pomodori maturi", "quantity": 2, "unit": "grandi" },
+        { "name": "Mozzarella di bufala", "quantity": 250, "unit": "g" },
+        { "name": "Basilico fresco", "quantity": 5, "unit": "foglie" },
+        {
+          "name": "Olio extravergine di oliva",
+          "quantity": null,
+          "unit": "q.b."
+        },
+        { "name": "Sale", "quantity": null, "unit": "q.b." }
+      ],
+      "steps": [
+        "Affettare i pomodori e la mozzarella.",
+        "Disporre le fette alternandole su un piatto.",
+        "Guarnire con foglie di basilico.",
+        "Condire con olio e sale.",
+        "Servire fresco."
+      ]
+    },
+    {
+      "name": "Risotto alla Milanese",
+      "category": "Primo Piatto",
+      "imgURL": "http://localhost:8080/images/risotto-alla-milanese.jpg",
+      "region": "Lombardia",
+      "city": "Milano",
+      "ingredients": [
+        { "name": "Riso Carnaroli", "quantity": 350, "unit": "g" },
+        { "name": "Brodo di carne", "quantity": 1200, "unit": "ml" },
+        {
+          "name": "Zafferano",
+          "quantity": 1,
+          "unit": "bustina o q.b. di pistilli"
+        },
+        { "name": "Burro", "quantity": 50, "unit": "g" },
+        { "name": "Cipolla", "quantity": 1, "unit": "piccola" },
+        { "name": "Vino bianco", "quantity": 100, "unit": "ml" },
+        { "name": "Parmigiano Reggiano", "quantity": 80, "unit": "g" }
+      ],
+      "steps": [
+        "Soffriggere la cipolla tritata in burro.",
+        "Aggiungere il riso e tostare per un paio di minuti.",
+        "Sfumare con il vino bianco.",
+        "Aggiungere il brodo gradualmente fino a cottura quasi completa.",
+        "Unire lo zafferano e mescolare bene.",
+        "Mantecare con parmigiano e burro, quindi servire."
+      ]
+    },
+    {
+      "name": "Cannoli Siciliani",
+      "category": "Dessert",
+      "imgURL": "http://localhost:8080/images/cannoli-siciliani.jpg",
+      "region": "Sicilia",
+      "city": "Palermo",
+      "ingredients": [
+        { "name": "Cannoli shells", "quantity": 12, "unit": "pezzi" },
+        { "name": "Ricotta", "quantity": 500, "unit": "g" },
+        { "name": "Zucchero a velo", "quantity": 100, "unit": "g" },
+        { "name": "Gocce di cioccolato", "quantity": 50, "unit": "g" },
+        { "name": "Scorza d'arancia candita", "quantity": null, "unit": "q.b." }
+      ],
+      "steps": [
+        "Setacciare la ricotta per ottenere una consistenza liscia.",
+        "Mescolare la ricotta con lo zucchero a velo e, se desiderato, con le gocce di cioccolato e la scorza d'arancia candita.",
+        "Riempire i cannoli shells con il composto.",
+        "Spolverare con zucchero a velo prima di servire."
+      ]
+    },
+    {
+      "name": "Arancini di Riso",
+      "category": "Antipasto",
+      "imgURL": "http://localhost:8080/images/arancini-di-riso.jpg",
+      "region": "Sicilia",
+      "city": "Catania",
+      "ingredients": [
+        { "name": "Riso", "quantity": 500, "unit": "g" },
+        { "name": "Ragù di carne", "quantity": 300, "unit": "g" },
+        { "name": "Piselli", "quantity": 100, "unit": "g" },
+        { "name": "Mozzarella", "quantity": 150, "unit": "g" },
+        { "name": "Pangrattato", "quantity": 100, "unit": "g" },
+        {
+          "name": "Uova",
+          "quantity": 2,
+          "unit": "pcs (per impasto e panatura)"
+        },
+        { "name": "Olio per friggere", "quantity": null, "unit": "q.b." }
+      ],
+      "steps": [
+        "Cuocere il riso e lasciarlo raffreddare.",
+        "Mescolare il riso con un uovo sbattuto e un po' di pangrattato per legarlo.",
+        "Formare delle palline, inserendo al centro una miscela di ragù, piselli e un pezzetto di mozzarella.",
+        "Passare le palline nell'uovo sbattuto e poi nel pangrattato.",
+        "Friggere in abbondante olio fino a doratura.",
+        "Scolare su carta assorbente e servire caldo."
+      ]
+    },
+    {
+      "name": "Focaccia Genovese",
+      "category": "Antipasto",
+      "imgURL": "http://localhost:8080/images/focaccia-genovese.jpg",
+      "region": "Liguria",
+      "city": "Genova",
+      "ingredients": [
+        { "name": "Farina", "quantity": 500, "unit": "g" },
+        { "name": "Acqua", "quantity": 300, "unit": "ml" },
+        { "name": "Lievito di birra", "quantity": 25, "unit": "g" },
+        { "name": "Sale", "quantity": 10, "unit": "g" },
+        { "name": "Olio extravergine di oliva", "quantity": 50, "unit": "ml" },
+        { "name": "Rosmarino", "quantity": null, "unit": "q.b." }
+      ],
+      "steps": [
+        "Sciogliere il lievito in acqua tiepida.",
+        "Mescolare farina, sale, lievito sciolto e olio fino a formare un impasto omogeneo.",
+        "Lasciare lievitare per 2 ore in un luogo caldo.",
+        "Stendere l'impasto in una teglia, creare delle fossette e cospargere con rosmarino.",
+        "Cuocere in forno a 220°C per circa 20-25 minuti.",
+        "Lasciare intiepidire prima di servire."
+      ]
+    }
+  ]
+}
