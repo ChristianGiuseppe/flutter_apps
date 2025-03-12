@@ -21,5 +21,5 @@ Next, open the newly created project and start the dev server via:
 
 # 🏁 Start the dev server
 ```bash
-dart pub global activate dart_frog_cli
+dart_frog dev
 ```
