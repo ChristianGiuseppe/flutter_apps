@@ -12,3 +12,14 @@ To use Dart Frog, you need to globally activate it with the following command:
 
 ```bash
 dart pub global activate dart_frog_cli
+```
+
+
+Start the Dev Server 🏁
+
+Next, open the newly created project and start the dev server via:
+
+# 🏁 Start the dev server
+```bash
+dart pub global activate dart_frog_cli
+```
